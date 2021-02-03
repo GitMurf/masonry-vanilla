@@ -8,13 +8,13 @@ Simply add a CSS code block onto your roam/css page and copy the following into 
 
 ```
 /* MAIN CSS - Required */
-@import url('https://abhayprasanna.github.io/dark-age-dracula.css');
+@import url('https://gitmurf.github.io/masonry-vanilla/masonry-main.css');
 
 /* OPTIONAL 1 - Some additional options on top of Vanilla that Murf uses */
-
+@import url('https://gitmurf.github.io/masonry-vanilla/masonry-optional-1.css');
 
 /* OPTIONAL 2 - More customized formatting to Murf's liking (still Roam Vanilla base though) */
-
+@import url('https://gitmurf.github.io/masonry-vanilla/masonry-optional-2.css');
 ```
 
 ## Contributions / Inspiration
