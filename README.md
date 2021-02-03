@@ -1,6 +1,6 @@
 # masonry-vanilla
 
-This theme applies the Masonry layout to a Vanilla / Plain Roam Graph (i.e., no other CSS)
+This theme applies the Masonry layout to a Vanilla / Plain Roam Graph (i.e., no other CSS).
 
 ## Contributions / Inspiration
 
