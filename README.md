@@ -17,6 +17,25 @@ Simply add a CSS code block onto your roam/css page and copy the following into 
 @import url('https://gitmurf.github.io/masonry-vanilla/masonry-optional-2.css');
 ```
 
+If you'd like to customize any of the main settings / colors / widths / heights you can add the following into your roam/css and customize accordingly:
+
+```
+:root {
+    --main-left-bg: white;
+    --right-sidebar-bg: rgb(247 248 249);
+    --right-sidebar-drag-bg: #337ac6;
+    --masonry-bg: white;
+    --masonry-scrollbar-bg: lightgrey;
+    --masonry-resizer-color: lightgrey;
+    --masonry-startWidth: 550px; /* DEFAULT: 550px; Change this to "unset" if you DON'T want the sidebar pages to be reset in grid like format each time */
+    --masonry-minWidth: 440px;
+    --masonry-maxWidth: 1200px;
+    --masonry-startHeight: 234px; /* DEFAULT: 243px; Change this to "unset" if you DON'T want the sidebar pages to be reset in grid like format each time */
+    --masonry-minHeight: 200px;
+    --masonry-border: 1px solid lightgrey;
+}
+```
+
 ## Contributions / Inspiration
 
 First and foremost I must give credit where credit is due (inspiration for Vanilla Masonry):
