@@ -1,0 +1,518 @@
+/* MOVING MENU AND SEARCH BOX TO THE UPPER RIGHT WHEN SIDEBAR IS OPEN (instead of default middle of page) */
+
+.roam-body-main {
+  margin-top: 45px;
+}
+.rm-topbar {
+  border-bottom: 0;
+  padding-right: 20px;
+  width        : 100vw;
+  z-index      : 5;
+  position     : fixed;
+  right        : 0;
+}
+#roam-right-sidebar-content {
+  margin-top: 20px;
+}
+
+/* Search bar wide when typing in it */
+
+.rm-find-or-create-wrapper:focus-within {
+  flex: 0 1 77% !important;
+}
+.bp3-overlay-open ul.bp3-menu .rm-menu-item li > span {
+  max-height: 42px !important;
+  word-break: break-word !important;
+  overflow: hidden !important;
+  display: inline-block !important;
+}
+.bp3-overlay-open ul.bp3-menu .rm-menu-item li {
+  list-style-type: none !important;
+  margin-left: -35px;
+}
+
+/* Add dashed line on hover of sidebar resizer line in middle of page */
+
+.rm-resize-handle:hover {
+  opacity: 0.4 !important;
+  border-right: 2px dashed #1b1a23 !important;
+  padding-left: 5px;
+}
+
+/* The "all collapse/expand" invisible line to very left of blocks */
+
+.rm-level-0 > .rm-multibar {
+    opacity: 0.25;
+}
+/* The new indent lines were showing on top of search bar */
+/* Abhay said that him and jeff harris set to 8, but I needed to set to 4 to work */
+.rm-multibar {
+  z-index: 4;
+}
+
+/* Buttons / Icons in menu area by search bar */
+
+/* Filter button was kind of high and to the left */
+.rm-topbar .bp3-button .bp3-icon.bp3-icon-filter {
+    margin-top: 4px;
+    margin-right: -18px;
+}
+/* All of Murf's added icons / buttons */
+.murf-icon {
+    margin-top: 2px;
+    margin-left: 8px;
+    margin-right: -6px;
+}
+
+/* Hiding the sidebar close button */
+
+div#right-sidebar > div.flex-h-box, div#right-sidebar > div.flex-h-box > button, div#right-sidebar > div.flex-h-box > button::before {
+    min-width: 0px;
+    max-width: 0px;
+    width: 0px;
+}
+div#right-sidebar > div.flex-h-box > button::before {
+    content: '';
+}
+
+/* */
+
+
+
+
+
+FILE TWO PROBABLY BELOW HERE AS EXTRA OPTIONAL
+
+/* Allow images to resive full width */
+
+  .hoverparent[style^="width: 580px;"],
+  .hoverparent[style^="width: 720px;"] {
+    width: 100% !important;
+    max-width: 1100px !important;
+  }
+  .rm-inline-img,
+  .react-resizable[style^='width: 580px;'],
+  .react-resizable[style^='width: 720px;'] {
+    width: 100% !important;
+  }
+
+/* Override image, iframe, pdf resize form abhay 1-30-21 */
+
+div[style*="width: 580px;"],
+div[style*="width: 720px;"] {
+  width: 100% !important;
+  max-width: 1100px !important;
+}
+div[style*="height: 720px;"] {
+  height: 85vh !important;
+}
+
+/* Hide "Outline of: " in the sidebar except for block references because otherwise nowhere to grab for drag n drop. */
+
+div.sidebar-content div.flex-h-box.window-headers > div:nth-child(2) > span:first-child:not([style^="margin-right: 6px"]) {
+  display: none;
+}
+
+/* Hide page / path in right sidebar for mentions / references */
+/* IN GENERAL BELOW, HAD TO DO ALOT OF THE > SPECIFIC HARDCODING TO AVOID APPLYING TO QUERY RESULTS IN THE SIDE BAR */
+
+/* Change chevron path separator color */
+#right-sidebar .rm-ref-page-view .rm-zoom .bp3-icon-chevron-right {
+  color: red;
+}
+/* Hide page title and path */
+#right-sidebar div.rm-reference-container > div.rm-mentions.refs-by-page-view > .rm-ref-page-view > .flex-h-box.rm-title-arrow-wrapper span {
+  height: 1px;
+  color: transparent;
+}
+/* Add light grey dashed line to separate pages & to help know where to hover */
+#right-sidebar div.rm-reference-container > div.rm-mentions.refs-by-page-view > .rm-ref-page-view > .flex-h-box.rm-title-arrow-wrapper {
+  border-bottom: 1px dashed lightgrey;
+}
+/* Hide parent path until hover */
+#right-sidebar div.rm-reference-container > div.rm-mentions.refs-by-page-view > .rm-ref-page-view > div > div > div.rm-reference-item > div > div.rm-zoom {
+  display: none;
+}
+#right-sidebar div.rm-reference-container > div.rm-mentions.refs-by-page-view > .rm-ref-page-view > div > div > div.rm-reference-item {
+  position: relative;
+  right: 25px;
+}
+/* Show the path and page title on hover */
+#right-sidebar div.rm-reference-container > div.rm-mentions.refs-by-page-view > .rm-ref-page-view > div > div > div.rm-reference-item:hover > div > div.rm-zoom {
+  display: flex;
+  padding-left: 5px;
+  padding-bottom: 10px;
+}
+#right-sidebar div.rm-reference-container > div.rm-mentions.refs-by-page-view > .rm-ref-page-view > .flex-h-box.rm-title-arrow-wrapper:hover,
+#right-sidebar div.rm-reference-container > div.rm-mentions.refs-by-page-view > .rm-ref-page-view > .flex-h-box.rm-title-arrow-wrapper:hover span {
+  height: unset;
+  color: unset;
+  border-bottom: unset;
+}
+
+
+
+
+
+
+OPTIONAL 3 - Murf's specific stuff he likes
+
+/* ***** SEARCH BAR RESULTS FORMATTING ***** */
+  /* page results from search bar */
+  .rm-search-title {
+    color: black !important;
+  }
+  /* Search results text */
+  li.rm-search-list-item > span {
+    color: initial !important;
+  }
+  /* Search results found text highlight */
+  span[style*="background-color: yellow"] {
+    background-color: lemonchiffon !important;
+    color: initial !important;
+    padding-left: 2px !important;
+    padding-right: 2px !important;
+    margin-left: 2px !important;
+    margin-right: 2px !important;
+    /*font-weight: bold !important;*/
+  }
+
+
+
+/* The bullet background color on closed bullets with children */
+
+.rm-bullet.rm-bullet--closed .rm-bullet__inner {
+    border: 4px solid yellow;
+}
+
+/* Updates to highlighted text in Roam with ^^text^^ */
+
+.rm-highlight {
+    margin: unset;
+    padding: 2px 4px;
+}
+
+del, strike, s {
+  color: grey;
+}
+
+/* Inline Code */
+
+code {
+  color: crimson;
+}
+
+/* Codemirror wrap lines by David Vargas (there are some quirks) */
+
+.CodeMirror-line {
+  white-space: pre-wrap !important;
+  word-break: break-word !important;
+}
+.CodeMirror-sizer {
+  min-width: unset !important;
+  border-right: 0px !important;
+  padding-right: 15px !important;
+}
+.CodeMirror-scroll {
+  overflow-x: unset !important;
+  margin-right: 0px !important;
+}
+
+/* Rainbow Indentation by Abhay from Dracula (tweaked by Murf) */
+/* https://abhayprasanna.github.io/rainbow-indent.css */
+/* https://abhayprasanna.github.io/rainbow-indent-core.css */
+
+:root {
+    /* My colors */
+    --box-shadow-values: none; /* Set to "none" to remove shadow... or 25px 0px 20px -30px; */
+    --indent1: springgreen;
+    --indent2: #FF0900;
+    --indent3: #5BC9D7;
+    --indent4: violet;
+    --indent5: orange;
+    --indent6: #01A80E;
+    --indent7: #0079FF;
+    --indent8: pink;
+    --indent9: black;
+    --indent10: springgreen;
+    --indent11: #FF0900;
+    --indent12: #5BC9D7;
+    --indent13: violet;
+    --indent14: orange;
+    --indent15: #01A80E;
+    --indent16: #0079FF;
+    --indent17: pink;
+    --indent18: black;
+  /* Abhay colors
+    --indent1: #5F388BAD;
+    --indent2: #4A57BAAD;
+    --indent3: #48864DAD;
+    --indent4: #A7A15AAD;
+    --indent5: #AD7E48AD;
+    --indent6: #A5494FAD;
+    --indent7: #634071AD;
+    --indent8: #303472AD;
+    --indent9: #395C45AD;
+    --indent10: #7C7948AD;
+    --indent11: #7D5039AD;
+    --indent12: #A5494FAD;
+    --indent13: #706597AD;
+    --indent14: #657D91AD;
+    --indent15: #6D8D76AD;
+    --indent16: #A09A84AD;
+    --indent17: #987174AD;
+    --indent18: #8B5F78AD;
+  */
+}
+
+/* Level 1 */
+.rm-level-1 > div, .rm-level-19 > div, .rm-level-37 > div, .rm-inline-references > .rm-multibar {
+    border-right-color: var(--indent1);
+    box-shadow: var(--box-shadow-values) var(--indent1) inset;
+}
+
+/* Level 2 */
+.rm-level-2 > div, .rm-level-20 > div, .rm-level-38 > div {
+    border-right-color: var(--indent2);
+    box-shadow: var(--box-shadow-values) var(--indent2) inset;
+}
+
+/* Level 3 */
+.rm-level-3 > div, .rm-level-21 > div, .rm-level-39 > div {
+    border-right-color: var(--indent3);
+    box-shadow: var(--box-shadow-values) var(--indent3) inset;
+}
+
+/* Level 4 */
+.rm-level-4 > div, .rm-level-22 > div, .rm-level-40 > div {
+    border-right-color: var(--indent4);
+    box-shadow: var(--box-shadow-values) var(--indent4) inset;
+}
+
+/* Level 5 */
+.rm-level-5 > div, .rm-level-23 > div, .rm-level-41 > div {
+    border-right-color: var(--indent5);
+    box-shadow: var(--box-shadow-values) var(--indent5) inset;
+}
+
+/* Level 6 */
+.rm-level-6 > div, .rm-level-24 > div, .rm-level-42 > div {
+    border-right-color: var(--indent6);
+    box-shadow: var(--box-shadow-values) var(--indent6) inset;
+}
+
+/* Level 7 */
+.rm-level-7 > div, .rm-level-25 > div, .rm-level-43 > div {
+    border-right-color: var(--indent7);
+    box-shadow: var(--box-shadow-values) var(--indent7) inset;
+}
+
+/* Level 8 */
+.rm-level-8 > div, .rm-level-26 > div, .rm-level-44 > div {
+    border-right-color: var(--indent8);
+    box-shadow: var(--box-shadow-values) var(--indent8) inset;
+}
+
+/* Level 9 */
+.rm-level-9 > div, .rm-level-27 > div, .rm-level-45 > div {
+    border-right-color: var(--indent9);
+    box-shadow: var(--box-shadow-values) var(--indent9) inset;
+}
+
+/* Level 10 */
+.rm-level-10 > div, .rm-level-28 > div, .rm-level-46 > div {
+    border-right-color: var(--indent10);
+    box-shadow: var(--box-shadow-values) var(--indent10) inset;
+}
+
+/* Level 11 */
+.rm-level-11 > div, .rm-level-29 > div, .rm-level-47 > div {
+    border-right-color: var(--indent11);
+    box-shadow: var(--box-shadow-values) var(--indent11) inset;
+}
+
+/* Level 12 */
+.rm-level-12 > div, .rm-level-30 > div, .rm-level-48 > div {
+    border-right-color: var(--indent12);
+    box-shadow: var(--box-shadow-values) var(--indent12) inset;
+}
+
+/* Level 13 */
+.rm-level-13 > div, .rm-level-31 > div, .rm-level-49 > div {
+    border-right-color: var(--indent13);
+    box-shadow: var(--box-shadow-values) var(--indent13) inset;
+}
+
+/* Level 14 */
+.rm-level-14 > div, .rm-level-32 > div, .rm-level-50 > div {
+    border-right-color: var(--indent14);
+    box-shadow: var(--box-shadow-values) var(--indent14) inset;
+}
+
+/* Level 15 */
+.rm-level-15 > div, .rm-level-33 > div, .rm-level-51 > div {
+    border-right-color: var(--indent15);
+    box-shadow: var(--box-shadow-values) var(--indent15) inset;
+}
+
+/* Level 16 */
+.rm-level-16 > div, .rm-level-34 > div, .rm-level-52 > div {
+    border-right-color: var(--indent16);
+    box-shadow: var(--box-shadow-values) var(--indent16) inset;
+}
+
+/* Level 17 */
+.rm-level-17 > div, .rm-level-35 > div, .rm-level-53 > div {
+    border-right-color: var(--indent17);
+    box-shadow: var(--box-shadow-values) var(--indent17) inset;
+}
+
+/* Level 18 */
+.rm-level-18 > div, .rm-level-36 > div, .rm-level-54 > div {
+    border-right-color: var(--indent18);
+    box-shadow: var(--box-shadow-values) var(--indent18) inset;
+}
+
+
+
+/* */
+
+
+
+
+
+/* Hide graph button in top bar menu area */
+.bp3-button.bp3-minimal.bp3-icon-graph.bp3-small {
+    display: none;
+}
+
+/* search box for block ref and page links move to left (beginning of block) */
+
+.bp3-elevation-3 {
+  max-height: 500px !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  left: -6px !important; /* This moves the search box back to left in line with the bullets so doesn't overflow when towards right edge of screen */
+}
+.rm-autocomplete-result {
+    word-break: unset;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* block ref stuff */
+
+/* Undo the default Roam css on block refs */
+.rm-block-ref {
+  padding: unset;
+  margin: unset;
+  display: unset;
+  border-bottom: unset;
+  cursor: alias;
+}
+/* Limited this down to block refs excluding tables (weird attribute table issue where it adds attribute children blocks as block refs) */
+.rm-block-ref.dont-focus-block {
+  color               : var(--block-reference-text) !important;
+  border-bottom       : none !important;
+  border-right-color  : #0079FF !important;
+  border-right-width  : 1px !important;
+  border-right-style  : dashed !important;
+  padding-right       : 5px !important;
+  border-left-color   : #0079FF !important;
+  border-left-width   : 1px !important;
+  border-left-style   : dashed !important;
+  padding-left        : 5px !important;
+}
+.rm-block-ref.dont-focus-block:hover {
+  background-color: var(--block-ref-hover-bg) !important;
+  border-bottom: unset !important;
+}
+
+/* get rid of the weird SPAN background color in attribute table cells */
+
+div.roam-table span[style*="position: absolute; opacity: 0.1; background-color: rgb(14, 90, 138); inset: 0px;"] {
+  background-color: unset !important;
+}
+
+/* Hide Roam Logo */
+
+#roam-sidebar-logo {
+  display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Roam42 SmartBlocks */
+
+/* Psychodelic */
+/*
+.rm-page-ref-tag[data-tag="42SmartBlock"] {
+  color: rgba(0,0,0,0.7) !important;
+  font-weight: 600;
+  padding: 3px 6px 4px 4px;
+  border-radius: 5px;
+  background-image: linear-gradient(to left, #DA53EEAD, #FE7FBFAD, #FF9580AD, #FFFF80AD, #8AFF80AD, #92FFFFAD, #9580FFAD )
+}
+.rm-page-ref-tag[data-tag="42SmartBlock"]:before {
+  content: " 🧠  ";
+  font-size: 80%;
+}
+*/
+
+/* Minimal */
+/*
+.rm-page-ref-tag[data-tag="42SmartBlock"] {
+  color: white !important;
+  padding: 2px 4px 2px 4px;
+  border-radius: 5px;
+  background-color: #565C70;
+}
+*/
+/* SPM just lego */
+/*
+.rm-page-ref-tag[data-tag="42SmartBlock"]:before {
+    display:inline-block;
+    height:14px;
+  	width:24px;
+    content: "";
+    background:url(https://i.ibb.co/Jp3zZgR/lego3blocks.png) no-repeat 0 0;
+    background-size: auto 14px;
+}
+*/
+
+.rm-page-ref-tag[data-tag="42SmartBlock"] {
+  color: rgba(0,0,0,0.7) !important;
+  font-weight: 600;
+  padding: 3px 6px 4px 6px;
+  border-radius: 5px;
+  background-image: linear-gradient(to left, #DA53EEAD, #FE7FBFAD, #FF9580AD, #FFFF80AD, #8AFF80AD, #92FFFFAD, #9580FFAD );
+  margin-left: 25px;
+}
+
+.rm-page-ref-tag[data-tag="42SmartBlock"]:before {
+    display:inline-block;
+    height:14px;
+  	width:24px;
+    content: "";
+    background:url(https://i.ibb.co/Jp3zZgR/lego3blocks.png) no-repeat 0 0;
+    background-size: auto 14px;
+  	position: relative;
+  	left: -30px;
+  	margin-right: -25px;
+}
+
+
+
+
+
