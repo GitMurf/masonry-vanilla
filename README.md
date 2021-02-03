@@ -2,6 +2,21 @@
 
 This theme applies the Masonry layout to a Vanilla / Plain Roam Graph (i.e., no other CSS).
 
+## How to Install
+
+Simply add a CSS code block onto your roam/css page and copy the following into it (you can choose whether to include Optional-2 and 3):
+
+```
+/* MAIN CSS - Required */
+@import url('https://abhayprasanna.github.io/dark-age-dracula.css');
+
+/* OPTIONAL 1 - Some additional options on top of Vanilla that Murf uses */
+
+
+/* OPTIONAL 2 - More customized formatting to Murf's liking (still Roam Vanilla base though) */
+
+```
+
 ## Contributions / Inspiration
 
 First and foremost I must give credit where credit is due (inspiration for Vanilla Masonry):
