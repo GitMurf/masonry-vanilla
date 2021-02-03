@@ -1,1 +1,182 @@
-start
+
+:root {
+    --main-left-bg: white;
+    --right-sidebar-bg: rgb(247 248 249);
+    --right-sidebar-drag-bg: #337ac6;
+    --masonry-bg: white;
+    --masonry-scrollbar-bg: lightgrey;
+    --masonry-resizer-color: lightgrey;
+    --masonry-startWidth: 550px; /* DEFAULT: 550px; Change this to "unset" if you DON'T want the sidebar pages to be reset in grid like format each time */
+    --masonry-minWidth: 440px;
+    --masonry-maxWidth: 1200px;
+    --masonry-startHeight: 234px; /* DEFAULT: 243px; Change this to "unset" if you DON'T want the sidebar pages to be reset in grid like format each time */
+    --masonry-minHeight: 200px;
+    --masonry-border: 1px solid lightgrey;
+}
+
+div.roam-app > div.flex-h-box > div.roam-main > div.roam-body-main {
+    background-color: var(--main-left-bg);
+}
+
+#right-sidebar, div.roam-app > div.flex-h-box {
+    background-color: var(--right-sidebar-bg);
+}
+
+#roam-right-sidebar-content {
+    overflow: auto !important;
+}
+
+.sidebar-content {
+    overflow: unset;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 99%;
+    align-content: flex-start;
+}
+
+.sidebar-content > div:not(.rm-dnd-separator) {
+    margin-bottom: 10px !important;
+    display: flex;
+    background-color: var(--masonry-bg);
+    max-height: 100%;
+    margin-left: 15px;
+    align-self: flex-start; /* So pages can be diff widths in a single column */
+    border-radius: 12px;
+    border: var(--masonry-border);
+}
+
+.sidebar-content > div:not(.rm-dnd-separator) > div:not(.rm-dnd-separator) {
+    border-bottom: unset !important;
+    height: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.sidebar-content > div:not(.rm-dnd-separator) > div:not(.rm-dnd-separator) > div:first-child {
+    height: 40px;
+    min-width: calc(var(--masonry-minWidth) + 40px);
+    align-items: center !important;
+}
+
+.sidebar-content > div:not(.rm-dnd-separator) > div:not(.rm-dnd-separator) > div:nth-child(2) {
+    height: calc(100% - 40px);
+}
+
+/*NOTE: .rm-sidebar-outline and .rm-reference-main are at same level and so need to be addressed with div > div... as opposed to direct .classnames */
+.sidebar-content > div:not(.rm-dnd-separator) > div:not(.rm-dnd-separator) > div:nth-child(2) > div:nth-child(2) {
+    resize: both;
+    overflow-y: auto;
+    width: var(--masonry-startWidth);
+    min-width: var(--masonry-minWidth);
+    max-width: var(--masonry-maxWidth);
+    height: var(--masonry-startHeight);
+    min-height: var(--masonry-minHeight);
+    max-height: 100%;
+    margin-right: 8px;
+}
+
+.sidebar-content > div:not(.rm-dnd-separator) > div:not(.rm-dnd-separator) > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) {
+    padding-bottom: 40px;
+    margin-left: -13px !important;
+}
+
+.sidebar-content .rm-reference-main > div {
+    margin-left: 0px !important;
+    margin-right: 5px !important;
+    padding-bottom: 40px;
+}
+
+/* SCROLLBAR */
+.sidebar-content > div:not(.rm-dnd-separator) > div:not(.rm-dnd-separator) > div:nth-child(2) > div:nth-child(2)::-webkit-scrollbar {
+    width: unset;
+}
+.sidebar-content > div:not(.rm-dnd-separator) > div:not(.rm-dnd-separator) > div:nth-child(2) > div:nth-child(2)::-webkit-scrollbar:hover {
+    background-color: var(--masonry-bg);
+}
+.sidebar-content > div:not(.rm-dnd-separator) > div:not(.rm-dnd-separator) > div:nth-child(2) > div:nth-child(2)::-webkit-resizer {
+    border-style: solid;
+    border-color: transparent var(--masonry-resizer-color) var(--masonry-resizer-color) transparent;
+    background-color: var(--masonry-bg);
+    border-width: 3px;
+}
+.sidebar-content > div:not(.rm-dnd-separator) > div:not(.rm-dnd-separator) > div:nth-child(2) > div:nth-child(2)::-webkit-scrollbar-button,
+.sidebar-content > div:not(.rm-dnd-separator) > div:not(.rm-dnd-separator) > div:nth-child(2) > div:nth-child(2)::-webkit-scrollbar-thumb,
+.sidebar-content > div:not(.rm-dnd-separator) > div:not(.rm-dnd-separator) > div:nth-child(2) > div:nth-child(2)::-webkit-scrollbar-track,
+.sidebar-content > div:not(.rm-dnd-separator) > div:not(.rm-dnd-separator) > div:nth-child(2) > div:nth-child(2)::-webkit-scrollbar-track-piece,
+.sidebar-content > div:not(.rm-dnd-separator) > div:not(.rm-dnd-separator) > div:nth-child(2) > div:nth-child(2)::-webkit-scrollbar-corner {
+    display: none;
+}
+/*Make the scrollbar smaller but keep the resize button the same*/
+.sidebar-content > div:not(.rm-dnd-separator) > div:not(.rm-dnd-separator) > div:nth-child(2) > div:nth-child(2):hover::-webkit-scrollbar-thumb {
+    display: block;
+    border-radius: 12px;
+    background-color: var(--masonry-scrollbar-bg);
+    border-style: solid;
+    border-width: 6px;
+    border-color: var(--masonry-bg);
+}
+
+/* Extend the main page wider to allow for blocks to be wider  */
+div[style*="padding-right: calc((100% - 800px) / 2); padding-left: calc((100% - 800px) / 2);"],
+div[style*="padding-right: calc((100% - 568px) / 2); padding-left: calc((100% - 1032px) / 2);"] {
+  /* FULL WIDTH
+    padding-right: calc((100% - 3400px) / 2) !important;
+    padding-left: calc((100% - 3400px) / 2) !important;
+  */
+    padding-right: calc((100% - 1500px) / 2) !important;
+    padding-left: calc((100% - 1500px) / 2) !important;
+}
+
+/* Block text widths to extend block text wider for when you make the page wider with the CSS above  */
+.roam-block-container {
+    max-width: unset;
+}
+#right-sidebar .rm-block-children.rm-block__children.rm-level-0 > div.roam-block-container,
+#right-sidebar div.zoom-path-view + div > div.roam-block-container {
+    width: 98%;
+}
+.rm-block-text {
+    max-width: unset;
+}
+#right-sidebar div.rm-zoom.zoom-path-view {
+    width: 98%;
+}
+
+/* Focus/zoom breadcrumb trail */
+.roam-body-main .roam-article .zoom-path-view {
+  margin-top: 10px;
+}
+/* Don't let images extend outside box */
+.rm-inline-img__resize, .react-resizable {
+    max-width: 100%;
+}
+
+/* When long page titles or block refs are in sidebar they need to be shrunk */
+.sidebar-content > div:not(.rm-dnd-separator) > div:not(.rm-dnd-separator) > div.flex-h-box.window-headers > div:nth-child(2) {
+    max-width: calc(var(--masonry-minWidth) - 10px);
+    max-height: 3em !important;
+    overflow: hidden;
+}
+
+/* Drag n Drop */
+.sidebar-content > div.rm-dnd-separator {
+    left: 16px;
+    top: -3px;
+    width: calc(var(--masonry-minWidth));
+}
+.sidebar-content > div > div.rm-dnd-separator {
+    right: 100%;
+    top: 100%;
+}
+.sidebar-content .rm-dnd-separator .rm-dnd-drop-bar {
+  top: 3px;
+  left: 1px;
+  background-color: var(--right-sidebar-drag-bg);
+}
+.sidebar-content .rm-dnd-separator {
+  width: unset;
+}
+.rm-dnd-drop-area, .rm-dnd-drop-bar {
+  min-width: calc(var(--masonry-minWidth) + 55px);
+}
