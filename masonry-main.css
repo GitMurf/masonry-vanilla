@@ -154,3 +154,9 @@ div.roam-app > div.flex-h-box > div.roam-main > div.roam-body-main {
 .rm-dnd-drop-area, .rm-dnd-drop-bar {
   min-width: calc(var(--masonry-minWidth) + 55px);
 }
+
+/* The new indent lines were showing on top of search bar */
+/* Abhay said that him and jeff harris set to 8, but I needed to set to 4 to work */
+.rm-multibar {
+  z-index: 4;
+}
