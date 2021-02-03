@@ -26,6 +26,30 @@ div[style*="padding-right: calc((100% - 568px) / 2); padding-left: calc((100% - 
     width: 98%;
 }
 
+/* Allow images to resive full width */
+
+  .hoverparent[style^="width: 580px;"],
+  .hoverparent[style^="width: 720px;"] {
+    width: 100% !important;
+    max-width: 1100px !important;
+  }
+  .rm-inline-img,
+  .react-resizable[style^='width: 580px;'],
+  .react-resizable[style^='width: 720px;'] {
+    width: 100% !important;
+  }
+
+/* Override image, iframe, pdf resize form abhay 1-30-21 */
+
+div[style*="width: 580px;"],
+div[style*="width: 720px;"] {
+  width: 100% !important;
+  max-width: 1100px !important;
+}
+div[style*="height: 720px;"] {
+  height: 85vh !important;
+}
+
 /* MOVING MENU AND SEARCH BOX TO THE UPPER RIGHT WHEN SIDEBAR IS OPEN (instead of default middle of page) */
 
 .roam-body-main {
@@ -90,4 +114,10 @@ div#right-sidebar > div.flex-h-box > button::before {
 
 .rm-level-0 > .rm-multibar {
     opacity: 0.25;
+}
+
+/* Hide "Outline of: " in the sidebar except for block references because otherwise nowhere to grab for drag n drop. */
+
+div.sidebar-content div.flex-h-box.window-headers > div:nth-child(2) > span:first-child:not([style^="margin-right: 6px"]) {
+  display: none;
 }
