@@ -58,12 +58,12 @@ mms.src = "https://gitmurf.github.io/masonry-vanilla/JS/matuschakModeSizer.js";
 document.getElementsByTagName("head")[0].appendChild(mms);
 ```
 
-SCRIPT 3 PLACEHOLDER
+Cycle through different block widths to make wider on page
 
 ```
 var tfps = document.createElement("script");
 tfps.type = "text/javascript";
-tfps.src = "https://gitmurf.github.io/masonry-vanilla/JS/toggleFullPageScroll.js";
+tfps.src = "https://gitmurf.github.io/masonry-vanilla/JS/cycleBlockWidth.js";
 document.getElementsByTagName("head")[0].appendChild(tfps);
 ```
 
