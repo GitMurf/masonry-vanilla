@@ -95,7 +95,7 @@ div.roam-table span[style*="position: absolute; opacity: 0.1; background-color: 
 /* The bullet background color on closed bullets with children */
 
 .rm-bullet.rm-bullet--closed .rm-bullet__inner {
-    border: 4px solid yellow;
+    border: var(--closed-bullet-color);
 }
 
 /* Updates to highlighted text in Roam with ^^text^^ */
@@ -112,7 +112,7 @@ del, strike, s {
 /* Inline Code */
 
 code {
-    color: crimson;
+    color: var(--code-color);
 }
 
 /* Codemirror wrap lines by David Vargas (there are some quirks) */
