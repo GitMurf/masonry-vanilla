@@ -184,9 +184,9 @@ code {
 /* All of Murf's added icons / buttons */
 
 .murf-icon {
-    margin-top: 2px;
-    margin-left: 8px;
-    margin-right: -6px;
+    margin-top: unset; /* 2px; */
+    margin-left: unset; /* 8px; */
+    margin-right: unset; /* -6px; */
 }
 
 /* Rainbow Indentation by Abhay from Dracula (tweaked by Murf) */
