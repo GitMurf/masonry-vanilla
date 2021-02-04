@@ -79,6 +79,13 @@ async function blockWidthToggle() {
                         padding-left: calc((100% - ${newWidth}) / 2) !important;
                     }
 
+					/* For safari / ipad */
+					div[style*="padding-right: calc(0.5 * (100% - 568px)); padding-left: calc(0.5 * (100% - 1032px));"],
+					div[style*="padding-right: calc(0.5 * (100% - 800px)); padding-left: calc(0.5 * (100% - 800px));"] {
+ 					    padding-right: calc(0.5 * (100% - ${newWidth})) !important;
+  						padding-left : calc(0.5 * (100% - ${newWidth})) !important;
+					}
+
                     /* Block text widths to extend block text wider for when you make the page wider with the CSS above  */
                     .roam-block-container {
                         max-width: unset;
