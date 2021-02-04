@@ -38,6 +38,35 @@ If you'd like to customize any of the main settings / colors / widths / heights 
 }
 ```
 
+### OPTIONAL roam/js Scripts
+
+Toggle sidebar full page width scrolling
+
+```
+var tfps = document.createElement("script");
+tfps.type = "text/javascript";
+tfps.src = "https://gitmurf.github.io/masonry-vanilla/JS/toggleFullPageScroll.js";
+document.getElementsByTagName("head")[0].appendChild(tfps);
+```
+
+SCRIPT 2 PLACEHOLDER
+
+```
+var tfps = document.createElement("script");
+tfps.type = "text/javascript";
+tfps.src = "https://gitmurf.github.io/masonry-vanilla/JS/toggleFullPageScroll.js";
+document.getElementsByTagName("head")[0].appendChild(tfps);
+```
+
+SCRIPT 3 PLACEHOLDER
+
+```
+var tfps = document.createElement("script");
+tfps.type = "text/javascript";
+tfps.src = "https://gitmurf.github.io/masonry-vanilla/JS/toggleFullPageScroll.js";
+document.getElementsByTagName("head")[0].appendChild(tfps);
+```
+
 ## Contributions / Inspiration
 
 First and foremost I must give credit where credit is due (inspiration for Vanilla Masonry):
