@@ -38,7 +38,7 @@ If you'd like to customize any of the main settings / colors / widths / heights 
 }
 ```
 
-### OPTIONAL roam/js Scripts
+## OPTIONAL roam/js Scripts
 
 Toggle sidebar full page width scrolling
 
