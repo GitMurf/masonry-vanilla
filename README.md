@@ -40,7 +40,7 @@ If you'd like to customize any of the main settings / colors / widths / heights 
 
 ## OPTIONAL roam/js Scripts
 
-Toggle sidebar full page width scrolling
+**Toggle sidebar full page width scrolling**
 
 ```
 var tfps = document.createElement("script");
@@ -51,7 +51,7 @@ document.getElementsByTagName("head")[0].appendChild(tfps);
 
 ![Toggle left window](https://user-images.githubusercontent.com/64155612/106884097-ba7f5780-6695-11eb-9812-3a6ce5869678.gif)
 
-Andy Matuschak mode with full height and toggles different sidebar widths with page widths
+**Andy Matuschak mode with full height and toggles different sidebar widths with page widths**
 
 ```
 var mms = document.createElement("script");
@@ -62,7 +62,7 @@ document.getElementsByTagName("head")[0].appendChild(mms);
 
 ![Andy Matuschak mode](https://user-images.githubusercontent.com/64155612/106884646-73459680-6696-11eb-838e-4b378e74839b.gif)
 
-Cycle through different block widths to make wider on page
+**Cycle through different block widths to make wider on page**
 
 ```
 var cbw = document.createElement("script");
