@@ -14,6 +14,8 @@
     /* DEFAULT: 243px; Change this to "unset" if you DON'T want the sidebar pages to be reset in grid like format each time */
     --masonry-minHeight: 200px;
     --masonry-border: 1px solid lightgrey;
+    --closed-bullet-color: 4px solid yellow;
+    --code-color: crimson;
 }
 
 div.roam-app>div.flex-h-box>div.roam-main>div.roam-body-main {
