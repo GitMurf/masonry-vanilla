@@ -71,6 +71,14 @@ div[style*="height: 720px;"] {
 
 /* Search bar wide when typing in it */
 
+/* These account for left sidebar being open and making sure search bar stays on top of it */
+.roam-sidebar-container.noselect:hover {
+    z-index: 1001;
+}
+.rm-topbar {
+    z-index: 1000;
+}
+
 .rm-find-or-create-wrapper:focus-within {
     flex: 0 1 77% !important;
 }
