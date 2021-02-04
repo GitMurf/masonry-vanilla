@@ -38,6 +38,10 @@ If you'd like to customize any of the main settings / colors / widths / heights 
 }
 ```
 
+### FULL DEMO
+
+https://user-images.githubusercontent.com/64155612/106953016-bf202c00-66e6-11eb-8345-9958fc719abd.mp4
+
 ## OPTIONAL roam/js Scripts
 
 **Toggle sidebar full page width scrolling**
