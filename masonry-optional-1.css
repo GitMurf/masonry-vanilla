@@ -104,16 +104,13 @@ div[style*="height: 720px;"] {
     margin-right: -18px;
 }
 
-/* Hiding the sidebar close button */
+/* Fixing the sidebar close button to show on very right of menu bar */
 
-div#right-sidebar>div.flex-h-box, div#right-sidebar>div.flex-h-box>button, div#right-sidebar>div.flex-h-box>button::before {
-    min-width: 0px;
-    max-width: 0px;
-    width: 0px;
+#right-sidebar .bp3-icon-menu-open {
+    z-index: 1001;
 }
-
-div#right-sidebar>div.flex-h-box>button::before {
-    content: '';
+.rm-topbar {
+    padding-right: 30px;
 }
 
 /* Add dashed line on hover of sidebar resizer line in middle of page */
