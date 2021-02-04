@@ -49,13 +49,13 @@ tfps.src = "https://gitmurf.github.io/masonry-vanilla/JS/toggleFullPageScroll.js
 document.getElementsByTagName("head")[0].appendChild(tfps);
 ```
 
-SCRIPT 2 PLACEHOLDER
+Andy Matuschak mode with full height and toggles different sidebar widths with page widths
 
 ```
-var tfps = document.createElement("script");
-tfps.type = "text/javascript";
-tfps.src = "https://gitmurf.github.io/masonry-vanilla/JS/toggleFullPageScroll.js";
-document.getElementsByTagName("head")[0].appendChild(tfps);
+var mms = document.createElement("script");
+mms.type = "text/javascript";
+mms.src = "https://gitmurf.github.io/masonry-vanilla/JS/matuschakModeSizer.js";
+document.getElementsByTagName("head")[0].appendChild(mms);
 ```
 
 SCRIPT 3 PLACEHOLDER
