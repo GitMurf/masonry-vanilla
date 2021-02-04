@@ -108,6 +108,7 @@ div[style*="height: 720px;"] {
 
 #right-sidebar .bp3-icon-menu-open {
     z-index: 1001;
+    padding-top: 4px !important;
 }
 .rm-topbar {
     padding-right: 30px;
