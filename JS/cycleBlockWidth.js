@@ -14,7 +14,7 @@ async function blockWidthToggle() {
     await mySleep(100);
 
     if (!window.blockWidthMode) {
-        window.blockWidthMode = {}; }
+        window.blockWidthMode = {};
         blockWidthMode["currentWidth"] = 1;
         blockWidthMode["widthSize1"] = '800px';
         blockWidthMode["widthSize2"] = '1000px';
