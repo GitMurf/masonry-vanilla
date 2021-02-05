@@ -50,7 +50,7 @@ https://user-images.githubusercontent.com/64155612/106953016-bf202c00-66e6-11eb-
 
 ### WANT MASONRY WITH A DARK THEME? Try Abhay's Dracula Pro!
 
-https://github.com/abhayprasanna/abhayprasanna.github.io#%EF%B8%8F-dracula-pro---dark-age-roam-theme
+https://github.com/abhayprasanna/abhayprasanna.github.io
 
 ![Dracula-Pro-Masonry](https://user-images.githubusercontent.com/64155612/107068601-af135580-6795-11eb-9e23-c1b196c03e89.png)
 
