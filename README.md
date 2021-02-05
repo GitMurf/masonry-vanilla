@@ -33,7 +33,7 @@ If you'd like to customize any of the main settings / colors / widths / heights 
     --masonry-startHeight: 234px; /* DEFAULT: 243px; Change this to "unset" if you DON'T want the sidebar pages to be reset in grid like format each time */
     --masonry-minHeight: 200px;
     --masonry-border: 1px solid lightgrey;
-    --closed-bullet-color: 4px solid yellow;
+    --closed-bullet-color: 4px solid #CED9E0;
     --code-color: crimson;
 }
 ```
