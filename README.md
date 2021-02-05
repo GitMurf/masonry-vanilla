@@ -6,7 +6,7 @@ This theme applies the Masonry layout to a Vanilla / Plain Roam Graph (i.e., no 
 
 ## How to Install
 
-Simply add a CSS code block onto your roam/css page and copy the following into it (you can choose whether to include Optional-2 and 3):
+Simply add a CSS code block onto your roam/css page and copy the following into it (you can choose whether to include Optional-2 and Optional-3):
 
 ```
 /* MAIN CSS - Required */
@@ -19,7 +19,7 @@ Simply add a CSS code block onto your roam/css page and copy the following into 
 @import url('https://gitmurf.github.io/masonry-vanilla/masonry-optional-2.css');
 ```
 
-If you'd like to customize any of the main settings / colors / widths / heights you can add the following into your roam/css and customize accordingly:
+To customize any of the main settings / colors, add the following UNDERNEATH the @import lines from above and modify accordingly:
 
 ```
 :root {
@@ -39,6 +39,10 @@ If you'd like to customize any of the main settings / colors / widths / heights 
     --code-color: crimson;
 }
 ```
+
+It should look like this:
+
+![vanilla-masonry-code-block-example](https://user-images.githubusercontent.com/64155612/107067038-93a74b00-6793-11eb-83a1-f47059b75ab0.png)
 
 ### FULL DEMO
 
