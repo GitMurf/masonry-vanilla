@@ -15,6 +15,10 @@ async function blockWidthToggle() {
 
     if (!window.blockWidthMode) { window.blockWidthMode = {}; }
     blockWidthMode["currentWidth"] = 1;
+    blockWidthMode["widthSize1"] = '800px';
+    blockWidthMode["widthSize2"] = '1000px';
+    blockWidthMode["widthSize3"] = '1300px';
+    blockWidthMode["widthSize4"] = '1700px';
 
     async function toggleBlockWidth(evt) {
         var currentOption = Number(blockWidthMode["currentWidth"]);
@@ -47,16 +51,16 @@ async function blockWidthToggle() {
         switch (newOption) {
             case 2:
                 //This is the Roam default
-                var newWidth = '800px'; //For example: padding-right: calc((100% - 800px) / 2) !important;
+                var newWidth = blockWidthMode["widthSize1"]; //For example: padding-right: calc((100% - 800px) / 2) !important;
                 break;
             case 3:
-                var newWidth = '1000px';
+                var newWidth = blockWidthMode["widthSize2"];
                 break;
             case 4:
-                var newWidth = '1300px';
+                var newWidth = blockWidthMode["widthSize3"];
                 break;
             case 5:
-                var newWidth = '1700px';
+                var newWidth = blockWidthMode["widthSize4"];
                 break;
             case 6:
                 var newWidth = '3400px'; //Full screen
