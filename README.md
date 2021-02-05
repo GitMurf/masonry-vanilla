@@ -29,10 +29,10 @@ To customize any of the main settings / colors, add the following UNDERNEATH the
     --masonry-bg: white;
     --masonry-scrollbar-bg: lightgrey;
     --masonry-resizer-color: lightgrey;
-    --masonry-startWidth: 550px; /* DEFAULT: 550px; Change this to "unset" if you DON'T want the sidebar pages to be reset in grid like format each time */
+    --masonry-startWidth: 550px; /* DEFAULT: 550px; Use "unset" to prevent loading in grid like format */
     --masonry-minWidth: 440px;
     --masonry-maxWidth: 1200px;
-    --masonry-startHeight: 234px; /* DEFAULT: 243px; Change this to "unset" if you DON'T want the sidebar pages to be reset in grid like format each time */
+    --masonry-startHeight: 234px; /* DEFAULT: 243px; Use "unset" to prevent loading in grid like format */
     --masonry-minHeight: 200px;
     --masonry-border: 1px solid lightgrey;
     --closed-bullet-color: 4px solid #CED9E0;
