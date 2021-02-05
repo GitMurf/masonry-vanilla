@@ -20,9 +20,21 @@ async function loadLeftToggleStart() {
             if (roamRSBCont.style.overflow == 'visible') { //Make main left side pinned
                 roamAppFlex.style.removeProperty("overflow");
                 roamRSBCont.style.setProperty("overflow", "auto");
+                var sbButton = document.getElementsByClassName('bp3-button bp3-minimal bp3-small bp3-icon-standard bp3-icon-menu-open');
+                if(sbButton.length == 1) {
+                    var sbButtonElem = sbButton[0];
+                    sbButtonElem.style.opacity = 1;
+                    sbButtonElem.style.zIndex = 1001;
+                }
             } else { //Allow the right sidebar to scroll the entire screen (un-pin main left)
                 roamAppFlex.style.setProperty("overflow", "auto");
                 roamRSBCont.style.setProperty("overflow", "visible", "important");
+                var sbButton = document.getElementsByClassName('bp3-button bp3-minimal bp3-small bp3-icon-standard bp3-icon-menu-open');
+                if(sbButton.length == 1) {
+                    var sbButtonElem = sbButton[0];
+                    sbButtonElem.style.opacity = 0;
+                    sbButtonElem.style.zIndex = 1;
+                }
             }
         }
     }
