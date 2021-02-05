@@ -13,12 +13,14 @@ async function blockWidthToggle() {
     //Sleep for an extra little bit to load later than my other icons to help with ordering left to right (100 = 2nd)
     await mySleep(100);
 
-    if (!window.blockWidthMode) { window.blockWidthMode = {}; }
-    blockWidthMode["currentWidth"] = 1;
-    blockWidthMode["widthSize1"] = '800px';
-    blockWidthMode["widthSize2"] = '1000px';
-    blockWidthMode["widthSize3"] = '1300px';
-    blockWidthMode["widthSize4"] = '1700px';
+    if (!window.blockWidthMode) {
+        window.blockWidthMode = {}; }
+        blockWidthMode["currentWidth"] = 1;
+        blockWidthMode["widthSize1"] = '800px';
+        blockWidthMode["widthSize2"] = '1000px';
+        blockWidthMode["widthSize3"] = '1300px';
+        blockWidthMode["widthSize4"] = '1700px';
+    }
 
     async function toggleBlockWidth(evt) {
         var currentOption = Number(blockWidthMode["currentWidth"]);
