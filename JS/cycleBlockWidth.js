@@ -16,6 +16,7 @@ async function blockWidthToggle() {
     if (!window.blockWidthMode) {
         window.blockWidthMode = {};
         blockWidthMode["currentWidth"] = 1;
+        //These will allow for user to set / change the widths within roam/js
         blockWidthMode["widthSize1"] = '800px';
         blockWidthMode["widthSize2"] = '1000px';
         blockWidthMode["widthSize3"] = '1300px';
