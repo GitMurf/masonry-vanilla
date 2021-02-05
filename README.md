@@ -52,7 +52,7 @@ https://user-images.githubusercontent.com/64155612/106953016-bf202c00-66e6-11eb-
 
 https://github.com/abhayprasanna/abhayprasanna.github.io#%EF%B8%8F-dracula-pro---dark-age-roam-theme
 
-![Dracula Pro](https://github.com/abhayprasanna/abhayprasanna.github.io/blob/master/Dracula%20Pro%20-%20Screenshot.png)
+![Dracula-Pro-Masonry](https://user-images.githubusercontent.com/64155612/107068601-af135580-6795-11eb-9e23-c1b196c03e89.png)
 
 ## OPTIONAL roam/js Scripts
 
