@@ -1,6 +1,8 @@
 # masonry-vanilla
 
-This theme applies the Masonry layout to a Vanilla / Plain Roam Graph (i.e., no other CSS).
+This theme applies the Masonry layout to a Vanilla / Plain Roam Graph (i.e., no other CSS required).
+
+![vanilla-masonry-1](https://user-images.githubusercontent.com/64155612/107065904-25ae5400-6792-11eb-9244-ce26cabe747c.png)
 
 ## How to Install
 
@@ -41,6 +43,12 @@ If you'd like to customize any of the main settings / colors / widths / heights 
 ### FULL DEMO
 
 https://user-images.githubusercontent.com/64155612/106953016-bf202c00-66e6-11eb-8345-9958fc719abd.mp4
+
+### WANT MASONRY WITH A DARK THEME? Try Abhay's Dracula Pro!
+
+https://github.com/abhayprasanna/abhayprasanna.github.io#%EF%B8%8F-dracula-pro---dark-age-roam-theme
+
+![Dracula Pro](https://github.com/abhayprasanna/abhayprasanna.github.io/blob/master/Dracula%20Pro%20-%20Screenshot.png)
 
 ## OPTIONAL roam/js Scripts
 
