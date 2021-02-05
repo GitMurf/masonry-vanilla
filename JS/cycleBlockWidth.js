@@ -21,6 +21,7 @@ async function blockWidthToggle() {
         blockWidthMode["widthSize2"] = '1000px';
         blockWidthMode["widthSize3"] = '1300px';
         blockWidthMode["widthSize4"] = '1700px';
+        blockWidthMode["widthSize5"] = '3400px';
     }
 
     async function toggleBlockWidth(evt) {
@@ -66,7 +67,7 @@ async function blockWidthToggle() {
                 var newWidth = blockWidthMode["widthSize4"];
                 break;
             case 6:
-                var newWidth = '3400px'; //Full screen
+                var newWidth = blockWidthMode["widthSize5"]; //Full screen
                 break;
             default:
                 //Normal whatever your CSS has by default (mine uses 1500px)
