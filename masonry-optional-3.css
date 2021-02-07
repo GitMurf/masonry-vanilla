@@ -10,13 +10,11 @@
     white-space: pre-wrap !important;
     word-break: break-word !important;
 }
-
 .CodeMirror-sizer {
     min-width: unset !important;
     border-right: 0px !important;
     padding-right: 15px !important;
 }
-
 .CodeMirror-scroll {
     overflow-x: unset !important;
     margin-right: 0px !important;
@@ -36,22 +34,16 @@
 #right-sidebar .rm-ref-page-view .rm-zoom .bp3-icon-chevron-right {
     color: red;
 }
-
 /* Hide page title and path */
-
 #right-sidebar div.rm-reference-container>div.rm-mentions.refs-by-page-view>.rm-ref-page-view>.flex-h-box.rm-title-arrow-wrapper span {
     height: 1px;
     color: transparent;
 }
-
 /* Add light grey dashed line to separate pages & to help know where to hover */
-
 #right-sidebar div.rm-reference-container>div.rm-mentions.refs-by-page-view>.rm-ref-page-view>.flex-h-box.rm-title-arrow-wrapper {
     border-bottom: 1px dashed lightgrey;
 }
-
 /* Hide parent path until hover */
-
 #right-sidebar div.rm-reference-container>div.rm-mentions.refs-by-page-view>.rm-ref-page-view>div>div>div.rm-reference-item>div>div.rm-zoom {
     display: none;
 }
@@ -59,9 +51,7 @@
     position: relative;
     right: 25px;
 }
-
 /* Show the path and page title on hover */
-
 #right-sidebar div.rm-reference-container>div.rm-mentions.refs-by-page-view>.rm-ref-page-view>div>div>div.rm-reference-item:hover>div>div.rm-zoom {
     display: flex;
     padding-left: 5px;
