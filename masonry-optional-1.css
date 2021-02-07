@@ -2,12 +2,18 @@
 /* Extend the main page wider to allow for blocks to be wider  */
 
 div[style*="padding-right: calc((100% - 800px) / 2); padding-left: calc((100% - 800px) / 2);"], div[style*="padding-right: calc((100% - 568px) / 2); padding-left: calc((100% - 1032px) / 2);"] {
-    /* FULL WIDTH
+    /*
+    Roam Default 800px
+    padding-right: calc((100% - 800px) / 2) !important;
+    padding-left: calc((100% - 800px) / 2) !important;
+
+    FULL WIDTH
     padding-right: calc((100% - 3400px) / 2) !important;
     padding-left: calc((100% - 3400px) / 2) !important;
-  */
-    padding-right: calc((100% - 1500px) / 2) !important;
-    padding-left: calc((100% - 1500px) / 2) !important;
+    */
+
+    padding-right: calc((100% - var(--block-widths)) / 2) !important;
+    padding-left: calc((100% - var(--block-widths)) / 2) !important;
 }
 
 /* Block text widths to extend block text wider for when you make the page wider with the CSS above  */
