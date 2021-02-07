@@ -1,3 +1,9 @@
+/* ----------------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------- */
+/* THESE ARE THINGS THAT MURF USES BUT ARE EXTREMELY OPTIONAL & YOU MAY NOT LIKE */
+/* ----------------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------- */
+
 /* Codemirror wrap lines by David Vargas (there are some quirks) */
 
 .CodeMirror-line {
@@ -14,4 +20,10 @@
 .CodeMirror-scroll {
     overflow-x: unset !important;
     margin-right: 0px !important;
+}
+
+/* hide intercom chat */
+
+.intercom-lightweight-app {
+    display: none;
 }
