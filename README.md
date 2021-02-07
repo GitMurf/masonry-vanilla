@@ -37,7 +37,7 @@ To customize any of the main settings / colors, add the following UNDERNEATH the
     --masonry-border: 1px solid lightgrey;
     --closed-bullet-color: 4px solid #CED9E0;
     --code-color: crimson;
-    --block-widths: 800px; /* Roam native: 800px; Murf's favorite: 1500px; Full screen: 3400px;
+    --block-widths: 800px; /* Roam native: 800px; Murf's favorite: 1500px; Full screen: 3400px; */
 }
 ```
 
