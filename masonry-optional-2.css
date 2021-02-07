@@ -115,24 +115,6 @@ code {
     color: var(--code-color);
 }
 
-/* Codemirror wrap lines by David Vargas (there are some quirks) */
-
-.CodeMirror-line {
-    white-space: pre-wrap !important;
-    word-break: break-word !important;
-}
-
-.CodeMirror-sizer {
-    min-width: unset !important;
-    border-right: 0px !important;
-    padding-right: 15px !important;
-}
-
-.CodeMirror-scroll {
-    overflow-x: unset !important;
-    margin-right: 0px !important;
-}
-
 /* Hide page / path in right sidebar for mentions / references */
 
 /* IN GENERAL BELOW, HAD TO DO ALOT OF THE > SPECIFIC HARDCODING TO AVOID APPLYING TO QUERY RESULTS IN THE SIDE BAR */
