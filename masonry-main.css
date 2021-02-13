@@ -178,3 +178,7 @@ div.roam-app>div.flex-h-box>div.roam-main>div.roam-body-main {
 .rm-multibar {
     z-index: 4;
 }
+
+/* Fix where block ref counter overflows and adds unnecessary horizontal scroll in masonry side pages */
+
+div.rm-block-main {width: 99%;}
