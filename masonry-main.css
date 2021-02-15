@@ -182,3 +182,15 @@ div.roam-app>div.flex-h-box>div.roam-main>div.roam-body-main {
 /* Fix where block ref counter overflows and adds unnecessary horizontal scroll in masonry side pages */
 
 div.rm-block-main {width: 99%;}
+
+/* Kanban */
+
+div[data-page-links*="kanban"] .dont-focus-block.rm-full-width {
+    margin-right: unset;
+}
+div.roam-main .kanban-board .kanban-column {
+    flex: 1 0 150px;
+}
+div#right-sidebar .kanban-board .kanban-column {
+    flex: 1 0 75px;
+}
