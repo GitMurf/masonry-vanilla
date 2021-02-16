@@ -69,7 +69,7 @@ div.roam-app>div.flex-h-box>div.roam-main>div.roam-body-main {
 
 /*NOTE: .rm-sidebar-outline and .rm-reference-main are at same level and so need to be addressed with div > div... as opposed to direct .classnames */
 
-.sidebar-content>div:not(.rm-dnd-separator)>div:not(.rm-dnd-separator)>div:nth-child(2)>div:nth-child(2) {
+.sidebar-content>div:not(.rm-dnd-separator)>div:not(.rm-dnd-separator)>div:nth-child(2)>div:nth-child(1) {
     resize: both;
     overflow-y: auto;
     width: var(--masonry-startWidth);
@@ -81,7 +81,7 @@ div.roam-app>div.flex-h-box>div.roam-main>div.roam-body-main {
     margin-right: 8px;
 }
 
-.sidebar-content>div:not(.rm-dnd-separator)>div:not(.rm-dnd-separator)>div:nth-child(2)>div:nth-child(2)>div:nth-child(2) {
+.sidebar-content>div:not(.rm-dnd-separator)>div:not(.rm-dnd-separator)>div:nth-child(2)>div:nth-child(1)>div:nth-child(2) {
     padding-bottom: 40px;
     margin-left: -8px !important;
 }
@@ -94,28 +94,28 @@ div.roam-app>div.flex-h-box>div.roam-main>div.roam-body-main {
 
 /* SCROLLBAR */
 
-.sidebar-content>div:not(.rm-dnd-separator)>div:not(.rm-dnd-separator)>div:nth-child(2)>div:nth-child(2)::-webkit-scrollbar {
+.sidebar-content>div:not(.rm-dnd-separator)>div:not(.rm-dnd-separator)>div:nth-child(2)>div:nth-child(1)::-webkit-scrollbar {
     width: unset;
 }
 
-.sidebar-content>div:not(.rm-dnd-separator)>div:not(.rm-dnd-separator)>div:nth-child(2)>div:nth-child(2)::-webkit-scrollbar:hover {
+.sidebar-content>div:not(.rm-dnd-separator)>div:not(.rm-dnd-separator)>div:nth-child(2)>div:nth-child(1)::-webkit-scrollbar:hover {
     background-color: var(--masonry-bg);
 }
 
-.sidebar-content>div:not(.rm-dnd-separator)>div:not(.rm-dnd-separator)>div:nth-child(2)>div:nth-child(2)::-webkit-resizer {
+.sidebar-content>div:not(.rm-dnd-separator)>div:not(.rm-dnd-separator)>div:nth-child(2)>div:nth-child(1)::-webkit-resizer {
     border-style: solid;
     border-color: transparent var(--masonry-resizer-color) var(--masonry-resizer-color) transparent;
     background-color: var(--masonry-bg);
     border-width: 3px;
 }
 
-.sidebar-content>div:not(.rm-dnd-separator)>div:not(.rm-dnd-separator)>div:nth-child(2)>div:nth-child(2)::-webkit-scrollbar-button, .sidebar-content>div:not(.rm-dnd-separator)>div:not(.rm-dnd-separator)>div:nth-child(2)>div:nth-child(2)::-webkit-scrollbar-thumb, .sidebar-content>div:not(.rm-dnd-separator)>div:not(.rm-dnd-separator)>div:nth-child(2)>div:nth-child(2)::-webkit-scrollbar-track, .sidebar-content>div:not(.rm-dnd-separator)>div:not(.rm-dnd-separator)>div:nth-child(2)>div:nth-child(2)::-webkit-scrollbar-track-piece, .sidebar-content>div:not(.rm-dnd-separator)>div:not(.rm-dnd-separator)>div:nth-child(2)>div:nth-child(2)::-webkit-scrollbar-corner {
+.sidebar-content>div:not(.rm-dnd-separator)>div:not(.rm-dnd-separator)>div:nth-child(2)>div:nth-child(1)::-webkit-scrollbar-button, .sidebar-content>div:not(.rm-dnd-separator)>div:not(.rm-dnd-separator)>div:nth-child(2)>div:nth-child(1)::-webkit-scrollbar-thumb, .sidebar-content>div:not(.rm-dnd-separator)>div:not(.rm-dnd-separator)>div:nth-child(2)>div:nth-child(1)::-webkit-scrollbar-track, .sidebar-content>div:not(.rm-dnd-separator)>div:not(.rm-dnd-separator)>div:nth-child(2)>div:nth-child(1)::-webkit-scrollbar-track-piece, .sidebar-content>div:not(.rm-dnd-separator)>div:not(.rm-dnd-separator)>div:nth-child(2)>div:nth-child(1)::-webkit-scrollbar-corner {
     display: none;
 }
 
 /*Make the scrollbar smaller but keep the resize button the same*/
 
-.sidebar-content>div:not(.rm-dnd-separator)>div:not(.rm-dnd-separator)>div:nth-child(2)>div:nth-child(2):hover::-webkit-scrollbar-thumb {
+.sidebar-content>div:not(.rm-dnd-separator)>div:not(.rm-dnd-separator)>div:nth-child(2)>div:nth-child(1):hover::-webkit-scrollbar-thumb {
     display: block;
     border-radius: 12px;
     background-color: var(--masonry-scrollbar-bg);
