@@ -80,7 +80,7 @@ async function andyModeToggle() {
             foundStyleSheet.innerHTML = '';
         } else {
             newHTMLCss = `
-                .sidebar-content > div:not(.rm-dnd-separator) > div:not(.rm-dnd-separator) > div:nth-child(2) > div:nth-child(2) {
+                .sidebar-content > div:not(.rm-dnd-separator) > div:not(.rm-dnd-separator) > div:nth-child(2) > div:nth-child(1) {
                     width: ${newWidth};
                     max-width: ${newMaxWidth};
                     height: 100%;
