@@ -79,17 +79,6 @@ document.getElementsByTagName("head")[0].appendChild(mms);
 
 ![Andy Matuschak mode](https://user-images.githubusercontent.com/64155612/106884646-73459680-6696-11eb-838e-4b378e74839b.gif)
 
-**Cycle through different block widths to make wider on page**
-
-```
-var cbw = document.createElement("script");
-cbw.type = "text/javascript";
-cbw.src = "https://gitmurf.github.io/masonry-vanilla/JS/cycleBlockWidth.js";
-document.getElementsByTagName("head")[0].appendChild(cbw);
-```
-
-![Cycle Block Widths](https://user-images.githubusercontent.com/64155612/106885194-1f877d00-6697-11eb-9d96-273f6b76b52a.gif)
-
 ## Contributions / Inspiration
 
 First and foremost I must give credit where credit is due (inspiration for Vanilla Masonry):
