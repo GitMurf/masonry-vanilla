@@ -56,25 +56,6 @@ div[style*="height: 720px;"] {
     height: 85vh !important;
 }
 
-/* MOVING MENU AND SEARCH BOX TO THE UPPER RIGHT WHEN SIDEBAR IS OPEN (instead of default middle of page) */
-
-.roam-body-main {
-    margin-top: 45px;
-}
-
-.rm-topbar {
-    border-bottom: 0;
-    padding-right: 20px;
-    width: 100vw;
-    z-index: 5;
-    position: fixed;
-    right: 0;
-}
-
-#roam-right-sidebar-content {
-    margin-top: 20px;
-}
-
 /* Search bar wide when typing in it */
 
 /* These account for left sidebar being open and making sure search bar stays on top of it */
