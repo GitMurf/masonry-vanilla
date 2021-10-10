@@ -39,11 +39,12 @@ span[style*="background-color: yellow"] {
 
 /* search box for block ref and page links move to left (beginning of block) */
 
-.bp3-elevation-3 {
+/* .bp3-elevation-3 {
     max-height: 500px !important;
     max-width: 100% !important;
+    width: 100% !important;
     left: -6px !important;
-    /* This moves the search box back to left in line with the bullets so doesn't overflow when towards right edge of screen */
+    /* This moves the search box back to left in line with the bullets so doesn't overflow when towards right edge of screen 
 }
 
 .rm-autocomplete-result {
@@ -52,6 +53,8 @@ span[style*="background-color: yellow"] {
     overflow: hidden;
     text-overflow: ellipsis;
 }
+COMMENTED OUT GIVEN ROAM CHANGE 10/10/21
+*/
 
 /* block ref stuff */
 
