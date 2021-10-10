@@ -41,7 +41,6 @@ span[style*="background-color: yellow"] {
 
 .bp3-elevation-3 {
     max-height: 500px !important;
-    width: 100% !important;
     max-width: 100% !important;
     left: -6px !important;
     /* This moves the search box back to left in line with the bullets so doesn't overflow when towards right edge of screen */
