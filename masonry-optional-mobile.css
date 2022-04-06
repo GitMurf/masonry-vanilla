@@ -1,0 +1,31 @@
+@media only screen and (max-device-width : 926px) {
+     .roam-body {
+         overflow-x: scroll !important; /* !important needed */
+    }
+     .roam-main {
+         min-width: 98vw;
+    }
+     #right-sidebar[style*="flex: 0 0 40%;"] {
+         flex: 0 0 95% !important; /* !important needed */
+    }
+     #roam-right-sidebar-content {
+         border-left: dashed 1px var(--masonry-border);
+         margin-right: 10px;
+    }
+     #right-sidebar[style*="flex: 0 0 0px;"], .rm-resize-handle {
+         display: none;
+    }
+     div:not(input) {
+         -webkit-user-select: none; /* prevent copy paste, to allow, change 'none' to 'text' */
+    }
+     :root {
+         --masonry-minWidth: unset !important;
+         --masonry-maxWidth: unset !important;
+         --masonry-minHeight: unset !important;
+         --masonry-startWidth: 72vw !important;
+         --masonry-startHeight: 100vh !important;
+    }
+     .sidebar-content>div:not(.rm-dnd-separator) {
+         margin-left: 10px;
+    }
+}
