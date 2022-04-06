@@ -17,6 +17,9 @@ Simply add a CSS code block onto your roam/css page and copy the following into 
 
 /* OPTIONAL 2 - More customized formatting to Murf's liking (still Roam Vanilla base though) */
 @import url('https://gitmurf.github.io/masonry-vanilla/masonry-optional-2.css');
+
+/* MOBILE OPTIONAL (needs Viktor Tabori Long tap JS to be functional https://github.com/thesved/ViktoRoam/blob/master/js/longtap.js */
+@import url('https://gitmurf.github.io/masonry-vanilla/masonry-optional-mobile.css');
 ```
 
 To customize any of the main settings / colors, add the following UNDERNEATH the @import lines from above and modify accordingly:
