@@ -6,7 +6,7 @@ This theme applies the Masonry layout to a Vanilla / Plain Roam Graph (i.e., no 
 
 ## How to Install
 
-Simply add a CSS code block onto your roam/css page and copy the following into it (you can choose whether to include Optional-1 and Optional-2):
+Simply add a CSS code block onto your roam/css page and copy the following into it (you can choose whether to include Optional-1, Optional-2 and Optional-Mobile):
 
 ```
 /* MAIN CSS - Required */
