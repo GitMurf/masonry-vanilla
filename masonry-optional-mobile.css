@@ -28,4 +28,8 @@
      .sidebar-content>div:not(.rm-dnd-separator) {
          margin-left: 10px;
     }
+     
+     #rm-mobile-bar {
+	position: fixed;
+    }
 }
