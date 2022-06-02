@@ -86,7 +86,7 @@ div.roam-app>div.flex-h-box>div.roam-main>div.roam-body-main {
     margin-left: -8px !important;
 }
 
-.sidebar-content .rm-reference-main>div {
+.sidebar-content .rm-reference-main>div:not(.flex-h-box) {
     margin-left: 0px !important;
     margin-right: 5px !important;
     padding-bottom: 40px;
