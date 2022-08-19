@@ -179,9 +179,11 @@ div.roam-app>div.flex-h-box>div.roam-main>div.roam-body-main {
     z-index: 4;
 }
 
-/* Fix where block ref counter overflows and adds unnecessary horizontal scroll in masonry side pages */
+/* Fix where block ref counter overflows and adds unnecessary horizontal scroll in masonry side pages - BREAKS #.rm-E
 
 div.rm-block-main {width: 99%;}
+
+/*
 
 /* Kanban */
 
